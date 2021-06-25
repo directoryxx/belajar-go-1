@@ -25,4 +25,10 @@ func main() {
 	}
 
 	fmt.Println(values)
+
+	// Ambil panjang array
+	fmt.Println(len(values))
+	// Modifikasi array index 1
+	values[1] = 90
+	fmt.Println(values)
 }

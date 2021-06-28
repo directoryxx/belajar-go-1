@@ -1,9 +1,13 @@
 version: "2"
 services:
   app:
-    image: golang:1.16.5-alpine3.13
+    build:
+      context: .
+      dockerfile: Dockerfile
     tty: true
     command: /bin/sh
+    environment:
+      GOPATH: /go/
     volumes:
       - .:/go/src/go-with-compose
     working_dir: /go/src/go-with-compose

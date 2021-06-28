@@ -8,6 +8,8 @@ services:
     command: /bin/sh
     environment:
       GOPATH: /go/
+      username: test
+      password: test
     volumes:
       - .:/go/src/go-with-compose
     working_dir: /go/src/go-with-compose
